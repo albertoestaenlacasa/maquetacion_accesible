@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga futbol 2025/26</title>
+</head>
+<body>
+    <header>
+        <h1 id="home">Resultados LaLiga 2025/26</h1>
+        <h2>El deporte rey</h2>
+    </header>    
+
+    <aside id="resumen-liga">
+        <!-- Resumen presentación -->
+        <p>En esta liga ha habido una superioridad manifiesta del Fútbol Club Barcelona.</p>
+        <p>La liga ha terminado con una ventaje de cerca de 10 puntos con el segundo y además ha batido un record al ganar <strong>todos los partidos</strong> disputados como local.</p>
+        <p>Una peculiaridad es que por obras ha jugado hasta en 3 campos distintos:</p>
+        <ul>
+                <li>Campo de entrenamiento Johan Cruyff</li>
+                <li>Estadi olimpic MontJuic</li>
+                <li>Spotify Camp Nou</li>
+        </ul> 
+    </aside>
+
+    <nav id="indice">
+        <h3>Indice</h3>
+        <ul>
+            <li><a href="#indice">Indice</a></li>
+            <li><a href="#equipos-europa">Equipos con competición europea</a></li>
+            <li><a href="#equipos-descenso">Equipos descendidos</a></li>
+            <li><a href="#goleadores">Goleadores</a></li>
+            <li><a href="#11-ideal">11 ideal</a></li>
+            <li><a href="#promesas">Nuevas promesas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="equipos-europa">
+            <h3>Clasificación de equipos en competición Europea</h3>
+            <ol>
+                <li>Barcelona</li>
+                <li>Real Madrid</li>
+                <li>Villareal</li>
+                <li>Atlético de Madrid</li>
+                <li>Betis</li>
+                <li>Celta de Vigo</li>
+                <li>Getafe</li>
+            </ol>
+            <p>Fuente: <a href="https://www.laliga.com/laliga-easports/clasificacion" target="_blank>">LaLiga.com</a></p>
+        </section>
+
+        <section id="equipos-descenso">
+            <h3>Clasificación final equipos en descenso</h3>
+            <ol start="18">
+                <li>Mallorca</li>
+                <li>Girona</li>
+                <li>Oviedo</li>
+            </ol>
+            <p>Fuente: <a href="https://www.laliga.com/laliga-easports/clasificacion" target="_blank>">LaLiga.com</a></p>
+        </section>
+
+        <section id="goleadores">
+            <h3>Clasificación máximos goleadores</h3>
+            <ol type="i">
+                <li>Mbappé (25)</li>
+                <li>Muriqi (23)</li>
+                <li>Ante Budimir (17)</li>
+                <li>Ferran (16)</li>
+            </ol>
+            <p>Fuente: <a href="https://www.eurosport.es/futbol/la-liga/2025-2026/clasificacion-maximos-goleadores-pichichi_sto23198319/story.shtml" target="_blank">Eurosport</a></p>
+        </section>
+
+        <section id="11-ideal">
+            <h3>11 ideal</h3>
+            <ul>
+                <li>
+                    <figure>
+                        <figcaption>Joan García</figcaption>
+                        <img src="imagenes/01-Joan_Garcia.png.webp" alt="foto Joan Garcia" width="70px" />
+                    </figure>
+                </li>
+                <li>Carlos Romero</li>
+                <li>
+                    <figure>
+                        <figcaption>
+                            Cubarsi
+                        </figcaption>
+                        <img src="imagenes/02-Cubarsi.png.webp" alt="foto Pau Cubarsi" width="70px" />
+                    </figure>
+                </li>
+                <li>Santiago Mouriño</li>
+                <li>Héctor Bellerín</li>
+                <li>
+                    <figure>
+                        <figcaption>
+                            Pedri
+                        </figcaption>
+                        <img src="imagenes/08-Pedri.png.webp" alt="foto Pedri" width="70px" />
+                    </figure>
+                </li>
+                <li>Luis Milla</li>
+                <li>Ez Abde</li>
+                <li>Kylian Mbappé</li>
+                <li>Lamine Yamal</li>
+                <li>Vedat Muriqi</li>
+            </ul>
+
+            <p>Fuente: <a href="https://www.si.com/es-us/futbol/el-once-ideal-de-laliga-2025-26" target="_blank">Si.com</a></p>
+        </section>
+
+        <section id="promesas">
+            <h3>Nuevas promesas</h3>
+            <p>Para la próxima temporada se está buscando nuevos futbolistas que puedan marcar la diferencia. <br>
+                Si crees que puedas ser tu, apuntate a nuestro campus nuevo de verano donde aprenderás todas las técnicas de toque y pase, y lo más importante entender el juego. <br>
+                Si tienes una edad entre 13 y 18 años, esta es tu oportunidad. Inscribiete ahora y recibirás la información compelta. 
+            </p>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="tu nombre o apodo" required maxlength="20">
+                    </div>
+                    <div>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="tu apellido completo" maxlength="40">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="tu apellido completo" required maxlength="40">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Caracteristicas</legend>
+                    <div>
+                        <label for="edad">Edad:</label>
+                        <input type="number" name="edad" id="edad" min="13" max="18">
+                    </div>
+                    <div>
+                        <span>Pie dominante:</span>
+                        <input type="radio" name="pie_dominante" id="pie_dominante" value="1" required>
+                        <label for="pie_dominante">Diestro</label>
+                        <input type="radio" name="pie_dominante" id="pie_dominante" value="2">
+                        <label for="pie_dominante">Zurdo</label>
+                        <input type="radio" name="pie_dominante" id="pie_dominante" value="3">
+                        <label for="pie_dominante">Ambidiestro</label>
+                    </div>
+                    <div>
+                        <label for="talla_pie">Talla Pie:</label>
+                        <input type="number" name="talla_pie" id="talla_pie" min="10" max="50" required>
+                    </div>
+                    <div>
+                        <label for="posicion">Posición preferida:</label>
+                        <select name="posicion" id="posicion" required>
+                            <option value="">-</option>
+                            <option value="1">Portero</option>
+                            <option value="2">Defesa central</option>
+                            <option value="3">Lateral</option>
+                            <option value="4">Centro campista</option>
+                            <option value="5">Extremo</option>
+                            <option value="6">Delantero</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Extras</legend>
+                    <div>
+                        <label for="foto">Foto:</label>
+                        <input type="file" accept=".png" name="foto" id="foto" placeholder="Foto de perfil">
+                    </div>
+                    <div>
+                        <label for="video">Video presentación:</label>
+                        <input type="url" name="video" id="video" placeholder="Pasa una url donde hay un video tuyo jugando" required size="100">
+                    </div>
+                </fieldset>
+
+                <input type="submit" name="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="#home">volver al principio</a></p>
+    </footer>
+
+</body>
+</html>
