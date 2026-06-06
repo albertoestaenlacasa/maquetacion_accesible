@@ -126,11 +126,15 @@
                     <legend>Datos personales</legend>
                     <div>
                         <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="tu nombre o apodo" required maxlength="20">
+                        <input type="text" name="nombre" id="nombre" placeholder="tu nombre real" required maxlength="20">
                     </div>
                     <div>
                         <label for="apellidos">Apellidos:</label>
                         <input type="text" name="apellidos" id="apellidos" placeholder="tu apellido completo" maxlength="40">
+                    </div>
+                    <div>
+                        <label for="apodo">Apodo:</label>
+                        <input type="text" name="apodo" id="apodo" placeholder="tu apodo (aka)" required maxlength="15" pattern="^[A-Z0-9][a-z0-9]{0,13}$">
                     </div>
                     <div>
                         <label for="email">Email:</label>
