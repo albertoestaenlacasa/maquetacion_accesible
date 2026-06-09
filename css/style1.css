@@ -1,4 +1,57 @@
 
 body {
+    background-color: lightsalmon;
+    font-size: 17px;
+}
+
+#home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+header h2 {
+    margin-top: 90px;
+}
+
+.pelota {
+    position: fixed;
+    display:flex;
+    top: 15px;
+    right: 15px;
+}
+
+.pelota img{
+   width: 60px;
+}
+
+.pelota:hover .gol{
+   display: block;
+}
+
+.pelota .gol{
+    display: none;
+    color: white;
+    padding: 15px;
+}
+
+
+.inicio {
+    border: 2px dotted black;
     background-color: yellow;
+}
+
+#indice li:hover {
+    color: red;
+    font-size: 1.3em;
+    padding-left: 10px;
+}
+
+#once-ideal img{
+    width: 170px;
 }
