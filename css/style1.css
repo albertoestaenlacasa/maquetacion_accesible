@@ -52,6 +52,31 @@ header h2 {
     padding-left: 10px;
 }
 
+#once-ideal ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#once-ideal ul li {
+    background-color: orange;
+    border-radius: 10%;
+    border: 2px solid green;
+}
+
+#once-ideal ul li:hover {
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
+
+
 #once-ideal img{
     width: 170px;
+    margin: 10px;
 }
+
