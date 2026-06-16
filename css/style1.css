@@ -1,7 +1,9 @@
 
 body {
     background-color: lightsalmon;
-    font-size: 17px;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    
 }
 
 #home {
@@ -30,16 +32,29 @@ header h2 {
    width: 60px;
 }
 
-.pelota:hover .gol{
-   display: block;
-}
-
 .pelota .gol{
     display: none;
     color: white;
     padding: 15px;
 }
 
+@media (min-width: 768px) {
+    .pelota {
+        top: 4px;
+        right: 15px;
+    }
+    .pelota img{
+        width: 90px;
+        filter: invert(100%);
+    }
+    .pelota .gol{
+        font-size: 2em;
+    }
+}
+
+.pelota:hover .gol{
+   display: block;
+}
 
 .inicio {
     border: 2px dotted black;
@@ -56,17 +71,20 @@ header h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 16px;
     text-align: center;
     list-style-type: none;
     padding: 0;
 }
 
-#once-ideal ul li {
+#once-ideal ul li, .las-listas {
     background-color: orange;
-    border-radius: 10%;
-    border: 2px solid green;
+    border: 3px solid green;
 }
+#once-ideal ul li {
+    border-radius: 10%;
+}
+
 
 #once-ideal ul li:hover {
     background-color: orangered;
@@ -74,9 +92,36 @@ header h2 {
     font-weight: bold;
 }
 
-
 #once-ideal img{
-    width: 170px;
+    width: 100px;
     margin: 10px;
 }
 
+@media (min-width: 768px) {
+    #once-ideal img{
+        width: 200px;
+    }
+}
+
+.las-listas {
+    border-radius: 24px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.las-listas article{
+    width: 100%; 
+}
+.las-listas article h4 {
+    color: yellow;
+    text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+    .las-listas {
+        flex-direction: row;
+        gap: 24px;
+    }
+}
