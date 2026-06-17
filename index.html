@@ -29,9 +29,13 @@
         <h3>Indice</h3>
         <ul>
             <li class="inicio"><a href="#indice">Indice</a></li>
-            <li><a href="#equipos-europa">Equipos con competición europea</a></li>
-            <li><a href="#equipos-descenso">Equipos descendidos</a></li>
-            <li><a href="#goleadores">Goleadores</a></li>
+            <li><a href="#clasificaciones">Clasificaciones</a>
+                <ul>
+                    <li><a href="#equipos-europa">Equipos con competición europea</a></li>
+                    <li><a href="#equipos-descenso">Equipos descendidos</a></li>
+                    <li><a href="#goleadores">Goleadores</a></li>
+                </ul>
+            </li>
             <li><a href="#once-ideal">11 ideal</a></li>
             <li><a href="#promesas">Nuevas promesas</a></li>
         </ul>
@@ -40,7 +44,7 @@
     <main>
         <section>
             <h3>Las clasificaciones:</h3>
-            <div class="las-listas">
+            <div id="clasificaciones" class="las-listas">
                 <article id="equipos-europa">
                     <h4>Equipos en competición Europea</h4>
                     <ol>
@@ -52,7 +56,7 @@
                         <li>Celta de Vigo</li>
                         <li>Getafe</li>
                     </ol>
-                    <p>Fuente: <a href="https://www.laliga.com/laliga-easports/clasificacion" target="_blank>">LaLiga.com</a></p>
+                    <p class="fuentes">Fuente: <a href="https://www.laliga.com/laliga-easports/clasificacion" target="_blank>">LaLiga.com</a></p>
                 </article>
 
                 <article id="equipos-descenso">
@@ -62,7 +66,7 @@
                         <li>Girona</li>
                         <li>Oviedo</li>
                     </ol>
-                    <p>Fuente: <a href="https://www.laliga.com/laliga-easports/clasificacion" target="_blank>">LaLiga.com</a></p>
+                    <p class="fuentes">Fuente: <a href="https://www.laliga.com/laliga-easports/clasificacion" target="_blank>">LaLiga.com</a></p>
                 </article>
 
                 <article id="goleadores">
@@ -73,7 +77,7 @@
                         <li>Ante Budimir (17)</li>
                         <li>Ferran (16)</li>
                     </ol>
-                    <p>Fuente: <a href="https://www.eurosport.es/futbol/la-liga/2025-2026/clasificacion-maximos-goleadores-pichichi_sto23198319/story.shtml" target="_blank">Eurosport</a></p>
+                    <p class="fuentes">Fuente: <a href="https://www.eurosport.es/futbol/la-liga/2025-2026/clasificacion-maximos-goleadores-pichichi_sto23198319/story.shtml" target="_blank">Eurosport</a></p>
                 </article>
             </div>
         </section>
@@ -105,8 +109,8 @@
                 </li>
                 <li>
                     <figure>
-                        <figcaption>
-                            Santiago Mouriño
+                        <figcaption class="santi">
+                            Santi Mouriño
                         </figcaption>
                         <img src="imagenes/MOURINO-2.jpg" alt="foto Santiago Mouriño" />
                     </figure>
@@ -237,7 +241,7 @@
                     </div>
                     <div>
                         <label for="video">Video presentación:</label>
-                        <input type="url" name="video" id="video" placeholder="Pasa una url donde hay un video tuyo jugando" required size="100">
+                        <input type="url" name="video" id="video" placeholder="Pasa la url de un video donde salgas jugando" required size="50">
                     </div>
                 </fieldset>
 

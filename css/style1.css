@@ -63,9 +63,10 @@ header h2 {
 
 #indice li:hover {
     color: red;
-    font-size: 1.3em;
-    padding-left: 10px;
+    padding-left: 4px;
 }
+
+
 
 #once-ideal ul {
     display: flex;
@@ -89,12 +90,11 @@ header h2 {
 #once-ideal ul li:hover {
     background-color: orangered;
     color: white;
-    font-weight: bold;
 }
 
 #once-ideal img{
-    width: 100px;
-    margin: 10px;
+    width: 85px;
+    margin: 8px;
 }
 
 @media (min-width: 768px) {
@@ -108,14 +108,22 @@ header h2 {
     padding: 16px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
 }
 .las-listas article{
-    width: 100%; 
+    width: 100%;
+    justify-content:space-between;
+    border-radius: 16px;
+    background-color: #F59C27;
 }
+
 .las-listas article h4 {
     color: yellow;
     text-decoration: underline;
+    text-align: center;
+}
+.fuentes {
+    padding-left: 16px;
 }
 
 
