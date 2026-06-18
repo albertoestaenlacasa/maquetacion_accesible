@@ -57,12 +57,12 @@ header h2 {
 }
 
 .inicio {
-    border: 2px dotted black;
+    border: 2px dotted #000000;
     background-color: yellow;
 }
 
 #indice li:hover {
-    color: red;
+    color: green;
     padding-left: 4px;
 }
 
@@ -110,15 +110,38 @@ header h2 {
     flex-direction: column;
     gap: 24px;
 }
-.las-listas article{
-    width: 100%;
+.las-listas article, .las-listas fieldset{
     justify-content:space-between;
     border-radius: 16px;
     background-color: #F59C27;
 }
+.las-listas article{
+    width: 100%;
+}
 
+.las-listas fieldset legend{
+    color: green;
+    font-weight: bold;
+}
+/* lo que viene siendo los fields 
+.las-listas fieldset div{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+.las-listas fieldset div label{
+    flex: 0 0 25%;
+    text-align: right;
+    padding-right: 8px;
+}
+.las-listas fieldset div input{
+    flex: 0 0 75%;
+    padding: 4px;
+    width: 100%;
+}
+*/
 .las-listas article h4 {
-    color: yellow;
+    color: green;
     text-decoration: underline;
     text-align: center;
 }
@@ -133,3 +156,4 @@ header h2 {
         gap: 24px;
     }
 }
+
