@@ -21,6 +21,28 @@ header h2 {
     margin-top: 90px;
 }
 
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+    font-weight: bold;
+    list-style-type:none;
+    justify-self:left;
+}
+nav ul li{     
+    padding: 8px;
+}
+nav ul a {
+    text-decoration: none;
+    color: green;
+}
+
+.listas-menu {
+    display: none;
+}
+
 .pelota {
     position: fixed;
     display:flex;
@@ -41,6 +63,12 @@ header h2 {
 @media (min-width: 768px) {
     #home {
         text-align: center;
+    }
+    nav ul{
+        flex-direction: row;
+        gap: 50px;
+        font-size: 1.5em;
+        justify-self: center;
     }
     .pelota {
         top: 4px;
@@ -64,9 +92,9 @@ header h2 {
     background-color: yellow;
 }
 
-#indice li:hover {
-    color: green;
-    padding-left: 4px;
+#indice li a:hover {
+    color: orange;
+    font-size: 1.1em;
 }
 
 
