@@ -31,18 +31,26 @@ nav ul {
     list-style-type:none;
     justify-self:left;
 }
-nav ul li{     
+nav ul .menu-normal{     
     padding: 8px;
-}
-nav ul a {
+ }
+nav ul .menu-normal a {
     text-decoration: none;
     color: green;
 }
 
 .listas-menu {
     display: none;
+    border: 3px solid green;
+    border-radius: 10%;
+    background-color: yellow;
+    font-size: 0.8em;
+    padding: 8px;
+    margin-top:10px;
 }
-
+.listas-menu li{
+    padding: 8px;
+}
 .pelota {
     position: fixed;
     display:flex;
@@ -94,7 +102,7 @@ nav ul a {
 
 #indice li a:hover {
     color: orange;
-    font-size: 1.1em;
+    text-decoration: underline;
 }
 
 
