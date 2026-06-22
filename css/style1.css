@@ -8,6 +8,7 @@ body {
 
 #home {
     position: fixed;
+    z-index: 1001;
     top: 0;
     left: 0;
     width: 100%;
@@ -39,8 +40,16 @@ nav ul .menu-normal a {
     color: green;
 }
 
+nav ul .show-listas-menu{
+    position: relative;
+}
 .listas-menu {
     display: none;
+    position: absolute;
+    z-index: 1000;
+    width: 300px;
+    left: 0;
+    
     border: 3px solid green;
     border-radius: 10%;
     background-color: yellow;
@@ -53,6 +62,7 @@ nav ul .menu-normal a {
 }
 .pelota {
     position: fixed;
+    z-index: 1002;
     display:flex;
     top: 15px;
     right: 15px;
